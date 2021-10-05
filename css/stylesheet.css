@@ -1,0 +1,277 @@
+		@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Noto+Sans:wght@400;700&family=UnifrakturMaguntia&display=swap');
+		@import url(https://weloveiconfonts.com/api/?family=entypo);
+
+		* { margin:0; padding:0; box-sizing:border-box; }
+		li { list-style:none; }
+		a { text-decoration:none; color: #000; }
+		
+		html, body { height:100%; width: 100%; font-family: 'Gruppo', cursive, sans-serif; background: #031231}
+
+		section {
+			margin:0 auto;
+			height:100%; width: 100%;
+			position:relative;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#section1 nav {
+			margin: 0;
+			position: fixed;
+			top: 0; left: 0;
+			height: 80px; width:100%;
+			background:#6b5d6f;
+			font-family: 'Noto Sans', sans-serif;
+			font-weight: bold;
+			font-size: 34px;
+			z-index: 9;
+		}
+			.fixed { position:fixed; top:0 }
+		#section1 nav h1 { padding:10px 0 0 20px; float: left; }
+		#section1 nav > ul { float:right; padding-right: 20px;}
+		#section1 nav > ul > li {
+			float:left;
+			padding: 0 40px;
+			position: relative;
+		}
+		#section1 nav > ul > li > a { line-height: 80px;}
+		#section1 nav ul ul {
+			position: absolute;
+			left: 20px; top: 100%;
+			width: 100%;
+			padding-left: 20px;
+			font-size: 18px;
+			background: #6b5d6f;
+			display: none;
+			z-index: 8;
+		}
+		#section1 nav ul ul li a { line-height: 40px; }
+		#section1 nav ul ul li a:hover { border-bottom: 2px solid #000; }
+		.blank {width:100%; height:80px; }
+		.content {
+			width:100%; height: 100%;
+			background-image:url('../img/border/bg.png');
+			background-repeat: no-repeat;
+			background-position: top 10px center;
+			background-size: 10px contain;
+			margin-top: 10px;
+			padding: 135px 140px 140px;
+			position: relative;
+		}
+    	.content figure {
+    		position: absolute;
+    		left: 50%; transform: translate(-50%);
+    		top: 20px;
+    	}
+		.video { width:100%; height: 600px; border: 3px solid #6b5d6f; position:relative; }
+		.video video { width:100%; height:100%; margin-bottom:200px; 
+    object-fit: cover;}
+    	.video div {
+    		position:absolute;
+    		width:180px; height:180px;
+    		border: 3px solid #6b5d6f;
+    		transform: rotate(45deg);
+    		background: #6b5d6f;
+    		-webkit-box-shadow: inset 0 0 40px 20px #031231;
+		 	box-shadow: inset 0 0 40px 20px #031231;
+		 	opacity: 0.8;
+		 	transition:all .3s;
+		 	cursor: pointer;
+    	}
+    	.video div:hover { opacity: 1; transition:all .3s; }
+    	.video div img {
+    		position: absolute;
+    		left:50%; top:50%;
+   			transform: translate(-50%, -50%) rotate(-45deg);
+    	}
+    	.video .btn:nth-of-type(1) { left:60px; top:60px; }
+    	.video .btn:nth-of-type(2) { left:60px; bottom:60px; }
+    	.video .btn:nth-of-type(3) { right:60px; top:60px; }
+    	.video .btn:nth-of-type(4) { right:60px; bottom:60px; }
+		.video .btn:nth-of-type(1) img { width: 50px;  }
+    	.video .btn:nth-of-type(2) img { width: 70px; }
+    	.video .btn:nth-of-type(3) img { width: 30px; }
+    	.video .btn:nth-of-type(4) img { width: 160px; }
+
+    	.cont {
+    		top:50%; transform:translate(0,-50%);
+    		position: absolute;
+    		color: #fff;
+    		text-align: center;
+    		padding:80px 80px;
+    		transition:all 0.3s;
+    	}
+    	.cont:hover { background: rgba(0, 0, 0, 0.2); transition:all 0.3s; }
+    	.cont p { text-align:left; font-size:18px; }
+    	h2 {
+    		font-family: 'UnifrakturMaguntia', cursive;
+    		font-size:70px;
+    	}
+    	.orament { margin:50px; }
+    	h4 { margin-top: 130px; }
+    	h4 a {
+    		font-family: 'UnifrakturMaguntia', cursive;
+    		font-size:  30px;
+    		letter-spacing: 2px;
+    		color:#fff;
+    		border: 3px solid #fff;
+    		padding: 8px 40px 5px;
+    		transition:all 0.3s;
+    	}
+    	h4 a:hover {
+    		background: #6b5d6f;
+    		transition:all 0.3s;
+    	}
+    	#section2 { background-image:url('../img/bg/1.png'); }
+    	#section2 .cont { right:150px; width:620px; height:700px; }
+    	#section3 { background-image:url('../img/bg/2.png'); }
+    	#section3 .cont { left:100px; width:800px; height:600px; }
+    	#section4 { background-image:url('../img/bg/3.png'); }
+    	#section4 .cont { right:90px; width:620px; height:700px; }
+    	#section4 .cont h4 { margin-top:100px; }
+    	#section5 { background-image:url('../img/bg/4.png'); }
+    	#section5 .cont { left:100px; width:620px; height:700px; }
+
+    	#section6 {color:#fff; height: 630px; padding: 40px; }
+    	#section6 .title {
+    		width: 597px;
+    		margin: 0 auto;
+    		text-align:center;
+    		overflow:hidden;
+    		position: relative;
+    	}
+    	#section6 .title img { float:left; margin: 0 10px;}
+    	#section6 h2 { float:left; margin-top: 2px;}
+    	#slide {
+    		width:1650px; height: 100%;
+    		margin: 0 auto;
+    		position: relative;
+    		overflow: hidden;
+    	}
+    	#slide ul { width:3300px; position: absolute;}
+    	#slide ul li {
+    		width: 210px; height: 100%;
+    		float:left;
+    		text-align: center;
+    		margin: 20px 60px;
+    	}
+    	#slide ul li h5 { margin-top:30px; }
+    	#slide ul li h5 a {
+    		font-family: 'UnifrakturMaguntia', cursive;
+    		font-size: 20px;
+    		color: #6b5d6f;
+    		border: 3px solid #6b5d6f;
+    		padding: 4px 25px 3px;
+    		transition: all .3;
+    	}
+    	#slide ul li h5 a:hover {
+    		color: #fff;
+    		border: 3px solid #fff;
+    		transition: all .3;
+    	}
+    	#slide ul li img { width:150px; height:380px; }
+    	#slide ul li:nth-of-type(7) img { width:80px; height:380px; }
+    	span {
+    		font-family: 'entypo', sans-serif;
+    		color:#6b5d6f;
+    		transition: all 0.3;
+			font-weight: bold;
+			font-size: 2em;
+    	}
+    	span:hover { color:#fff; transition: all 0.3; }
+    	#section6 .left { position: absolute; left:150px; top: 340px; cursor:pointer;  z-index: 8;}
+    	#section6 .right { position: absolute; right:150px; top: 340px; cursor:pointer;}
+
+    	h3 {
+    		font-size: 50px;
+    		position:absolute;
+    		transform: rotate(90deg);
+    		top: 150px; right: -80px;
+    	}
+    	#section7 {
+    		background-image:url('../img/bg/sergeluten.jpg');
+    		position:relative;
+    		color:#fff;
+    	}
+    	#section7 p {
+    		position: absolute;
+    		width: 650px; height: 200px;
+    		bottom: 50px; left: 50px;
+    		text-align: justify;
+    	}
+    	#section8 { overflow:hidden; }
+    	#section8 #bgslide {height: 100%; height: 100%; color:#fff; position:relative;}
+    	#section8 #bgslide li {
+    		width: 100%; height: 100%;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+    		position:absolute;
+    	}
+    	#section8 #bgslide li:nth-of-type(1) {
+    		background-image:url('../img/bg/bou1.jpg');
+    		left: 0px;
+    	}
+    	#section8 #bgslide li:nth-of-type(2) {
+    		background-image:url('../img/bg/bou2.jpg');
+    		left: 100%;
+    	}	
+    	#section8 #bgslide > li > div {
+    		position:absolute;
+    		left:100px; top:50%;
+    		transform:translate(0, -50%);
+    		width: 600px;
+    		background: rgba(0, 0, 0, 0.4);
+    		box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+    		padding: 43px 50px 50px;
+    	}
+    	#section8 #bgslide > li p { font-size:20px; margin-top: 20px; }
+    	#section8 #buttonlist {
+    		position:absolute;
+    		bottom: 20px; left:50%;
+    		transform:translate(-50%);
+    		overflow: hidden;
+    		z-index: 8;
+    	}
+    	#section8 #buttonlist li {
+    		float:left; margin:30px;
+    		color: #fff;
+    		font-size:40px;
+    		cursor: pointer;
+    	}
+    	h6 { font-size:50px; }
+
+    	footer {
+    		width:100%; height:170px;
+    		overflow: hidden;
+    		font-size:18px;
+    		background: #6b5d6f;
+    		border-top: 2px solid #000;
+    	}
+    	footer ul { float:left; width: 300px; margin: 30px;}
+    	footer ul li { margin-top:8px; }
+    	footer ul li a { color:#000; }
+    	footer ul li a:hover { border-bottom:1px solid #000; }
+    	footer ul li select {
+    		width:70px;
+    		background: none;
+    		border: none;
+    		color:#000;
+    		font-family: 'Gruppo', cursive;
+    		font-size: 18px;
+    		margin-left: -4px;
+    	}
+    	footer ul li select:hover { border-bottom:1px solid #000; }
+    	footer ul li select:focus { background:#6b5d6f; }
+    	footer div {
+    		float: right;
+    		width: 130px;
+    		margin-top: 30px;
+    	}
+    	footer div span{
+    		font-size: 30px;
+    		color: #333;
+    		padding-left: 20px;
+    	}
+    	footer div span:hover { color:#000; }
+
+
